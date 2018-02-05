@@ -1,0 +1,41 @@
+Two-Stream predict = predict.py
+Two-Stream attack = attack.py
+
+If you want to run program, see below.
+
+Requirement :
+    - Keras on Python3
+    - Tensorflow / Theano on Python3
+    - Opencv2 on Python3
+    - foolbox on Python3
+    - Data UCF - 101
+
+Dataset path configure:
+    
+    - Open paths.py
+    - Change variables of path
+    
+    About variables:
+    
+        test_x_path is text file path, That involving choosen names of video names on UCF-101.
+        test_y_path is text file path, That involving choosen categories on UCF-101.
+        
+        temporal_path_hor = DataSet Temporal horizontal path
+        temporal_path_ver = DataSet Temporal vertical path
+        
+        spatial_path = Dataset Spatial path
+        
+        temporal_model_path = Two-Stream Temporal model file path
+        spatial_model_path = Two-Stream Spatial model file path
+            
+    
+Compile program:
+    - Run Two-Stream predicts : 
+        
+            python3 -W ignore predict.py
+    
+    - Run Attack to video frames And Two-Stream predicts : 
+        
+            python3 -W ignore predict.py
+    
+    - Try access
